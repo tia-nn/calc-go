@@ -1,0 +1,11 @@
+formula ::= add
+
+add ::= mul
+    ::= add + mul
+    ::= add - mul
+
+mul ::= num
+    ::= mul * num
+    ::= mul / num
+
+num ::= /[1-9][0-9]*/
